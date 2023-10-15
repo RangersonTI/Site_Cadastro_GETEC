@@ -5,10 +5,35 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#teste{
+    background-color: red;
+}
+
 #regressive_Count{
-    color:#2471A3;
-    font-size: 85px;
-    font-weight: normal
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    background-color: red;
+}
+
+#regressive_Count div{
+    float: left;
+    font-size: 50px;
+    margin: 2px;
+    background-color: #193868;
+    color: aliceblue;
+    box-sizing: border-box;
+    border-radius: 10%;
+    width: 70px;
+    height: 60px;
+}
+
+#regressive_Count_label{
+    text-align: center;
+    font-size: 10px;
+    margin: 2px;
+    color: aliceblue;
+    box-sizing: border-box;
 }
 
 .container {
@@ -22,7 +47,7 @@ body {
 
 header{
     background-color: #136420;
-    font-size: 50;
+    font-size: medium;
     font-family: 'Play', sans-serif;
     color: aliceblue;
     text-align: center;

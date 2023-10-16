@@ -1,6 +1,6 @@
 // Contagem regressiva para o evento
 
-var countDownDate = new Date("October 15, 2023 15:00:00").getTime();  // Atualiza a contagem regressiva a cada 1 segundo 
+var countDownDate = new Date("November 24, 2023 18:00:00").getTime();  // Atualiza a contagem regressiva a cada 1 segundo 
 
 var x = setInterval(function() {                // Get todays date and time 
     var now = new Date().getTime();                      

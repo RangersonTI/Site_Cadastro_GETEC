@@ -37,7 +37,7 @@ body {
 }
 
 .container {
-    max-width: 45%;
+    max-width: 40%;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -45,7 +45,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-header{
+headder{
     background-color: #136420;
     font-size: medium;
     font-family: 'Play', sans-serif;
@@ -78,13 +78,13 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     border-radius: 3px;
 }
 
-label[for="nome"], label[for="email"], label[for="telefone"], label[for="cpf"]{
+label[for="nome"], label[for="email"], label[for="telefone"], label[for="genero"], label[for="cpf"]{
     font-size: 20px;
     font-family: 'Lato', sans-serif;
 }
 
 select {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;

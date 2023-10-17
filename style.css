@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Play:wght@700&display=swap');
+
+header{
+    background-color: #05380e;
+    font-size: medium;
+    font-family: 'Play', sans-serif;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 10%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(#64b964, #70a2e4, #6a95f3, #3f75e9);
+}
+
+#teste{
+    background-color: red;
+}
+
+#regressive_Count{
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    background-color: red;
+}
+
+#regressive_Count div{
+    float: left;
+    font-size: 50px;
+    margin: 2px;
+    background-color: #193868;
+    color: aliceblue;
+    box-sizing: border-box;
+    border-radius: 10%;
+    width: 70px;
+    height: 60px;
+}
+
+#regressive_Count_label{
+    text-align: center;
+    font-size: 10px;
+    margin: 2px;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    color: #ffff;
+    border-radius: 5px;
+    background-color: #06330e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select[id="genero"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #d6d8da;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label[for="nome"], label[for="email"], label[for="telefone"], label[for="genero"], label[for="cpf"]{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+button {
+    background-image: linear-gradient(#64b964, #5f95b4, #5579c7, #3d63b4);
+    border-bottom: #000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+
+    font-family: Arial, sans-serif;
+}
+
+button:hover {
+    background-color: #136420;
+}
+
+button:disabled{
+    background-color: #494949;
+    cursor: default;
+}
+
+#button_local{
+    text-align: right;
+}

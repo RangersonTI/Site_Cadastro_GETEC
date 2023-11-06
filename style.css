@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Play:wght@700&display=swap');
 
 header{
-    background-color: #381105;
+    background-color: #083f12;
     /*background-color: #05380e;*/
     text-align: center;
     align-items: center;
@@ -110,7 +110,7 @@ button:disabled{
 }
 
 footer{
-    background-color: #05380e;
+    background-color: #083f12;
     padding-bottom: 100%;
     color: #fff; /* Cor do texto no rodapé */
     position: absolute;

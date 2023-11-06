@@ -26,7 +26,7 @@ var x = setInterval(function() {                // Get todays date and time
         document.getElementById("horas").innerHTML = 0;
         document.getElementById("minutos").innerHTML = 0;
         document.getElementById("segundos").innerHTML = 0;
-        //document.getElementById("regressive_Count").innerHTML = "TEMPO ESGOTADO";
+        document.getElementById("regressive_Count").innerHTML = "TEMPO ESGOTADO";
         document.getElementById("button_local_cadastro").disabled = true;
     }
 }, 1000);

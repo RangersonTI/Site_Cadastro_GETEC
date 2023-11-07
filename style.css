@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Exo+2:wght@600&display=swap');
+
+@font-face {
+    font-family: 'Fonte_Getec';
+    src: url('assets/Maddac.ttf');
+}
 
 header{
     background-color: #083f12;
-    /*background-color: #05380e;*/
     text-align: center;
     align-items: center;
-    padding-top: 4px;
-    padding-bottom: 2px;
+    padding-top: 2%;
     height: 15%;
+}
+
+header img{
+    width: 350px;
 }
 
 body, html {
@@ -17,44 +25,98 @@ body, html {
     padding: 0;
     height: 100%;
     background-color: rgb(126, 153, 212);
-    /*background-image: linear-gradient(#ffffff, #70a2e4, #6a95f3, #3f75e9);*/
+}
+
+.animacao {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Fonte_Getec', sans-serif;
+    text-transform: uppercase;
+    animation: animacaoTexto 2s infinite alternate;
+}
+
+@keyframes animacaoTexto {
+    0% {
+        color: #005299;
+    }
+    20% {
+        color: #0d618f;
+    }
+    40% {
+        color: #1d5c94;
+    }
+    60% {
+        color: #2540ac;
+    }
+    80% {
+        color: #193d79;
+    }
+    100% {
+        color: #153e63;
+    }
 }
 
 #regressive_Count{
     text-align: center;
     align-items: center;
-    background-color: red;
+    width: 100%;
 }
 
-#regressive_Count div{
-    float: left;
-    font-size: 50px;
-    margin: 2px;
-    background-color: #193868;
-    color: aliceblue;
-    box-sizing: border-box;
-    border-radius: 10%;
-    width: 70px;
-    height: 60px;
-}
+    #regressive_Count div{
+        font-size: 100px;
+        margin: 5px;
+        background-color: #193868;
+        color: aliceblue;
+        box-sizing: border-box;
+        border-radius: 10%;
+        width: 130px;
+        height: 120px;
+    }
 
-#regressive_Count_label{
+    #regressive_Count_label{
+        text-align: center;
+        font-size: 10px;
+        margin: 2px;
+        color: aliceblue;
+        box-sizing: border-box;
+    }
+
+    #dias, #horas, #minutos, #segundos{
+        display: inline-block;
+    }
+
+.animacao, #regressive_Count, .nome_periodo{
+    display: block;
+    align-items: center;
     text-align: center;
-    font-size: 10px;
-    margin: 2px;
-    color: aliceblue;
-    box-sizing: border-box;
+    padding: 5px;
 }
+    .nome_periodo{
+        color: #fff;
+        font-size: larger;
+    }
+    .nome_periodo div{
+        width: 130px;
+        height: 10px;
+        color: #fff;
+        font-size: 170%;
+        font-family: 'Exo 2', sans-serif;
+        display: inline-block;
+        margin: 0px;
+    }
+
 
 .container {
-    max-width: 40%;
+    width: 45%;
+    min-width: 450;
+    max-width: 900;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #1d4688;
     color: #ffff;
     border-radius: 5px;
     background-color: #083f12;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 40px #1d4688;
 }
 
 
@@ -67,8 +129,10 @@ label {
     margin-bottom: 10px;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], input[type="number"]{
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select[name="tipo_participante"]{
     width: 95%;
+    max-width: 1280px;
+    font-size: 20px;
     padding: 10px;
     margin-bottom: 15px;
     background-color: #d6d8da;
@@ -76,22 +140,20 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="number"]
     border-radius: 3px;
 }
 
-label[for="nome"], label[for="email"], label[for="telefone"], label[for="cpf"]{
-    font-size: 18px;
+label[for="nome"], label[for="email"], label[for="telefone"], label[for="cpf"], label[for="tipo_participante"]{
+    font-size: 22px;
     font-family: 'Lato', sans-serif;
 }
 
 button {
-    /*background-image: linear-gradient(#64b964, #5f95b4, #5579c7, #3d63b4);*/
     background-color: rgb(108, 185, 252);
     border-bottom: #000;
     color: #000;
-    border: none;
+    border: 2px;
     padding: 10px 20px;
     border-radius: 3px;
     cursor: pointer;
-    font-size: 15px;
-
+    font-size: 25px;
     font-family: Arial, sans-serif;
 }
 
@@ -100,8 +162,15 @@ button:hover {
     color: #fff;
 }
 
+button:active {
+    background-color: #18578f;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
 button:disabled{
     background-color: #494949;
+    color: #fff;
     cursor: default;
 }
 
@@ -112,9 +181,11 @@ button:disabled{
 footer{
     background-color: #083f12;
     padding-bottom: 100%;
-    color: #fff; /* Cor do texto no rodapé */
-    position: absolute;
-    padding: 2%;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1%;
+    padding-bottom: 0;
     bottom: 0;
     width: 100%;
     text-align: center;

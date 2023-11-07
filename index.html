@@ -6,43 +6,70 @@
     <link rel="stylesheet" href="style.css">
     <title>Cadastro de Participante</title>
 </head>
-<header>
-    <div class="cabecalho">
-        <img src="assets/getec-logo.svg" width="15%">
-    </div>
-</header>
-<br><br><br><br><br><br><br><br>
 <body>
+    <header>
+        <div class="cabecalho">
+            <img src="assets/getec-logo.svg" width="15%">
+        </div>
+    </header>
+    <br><br><br><br><br><br><br><br>
     <div class="container">
         <h1>Cadastro do Participante</h1>
         <form action="cadastrar.php" method="POST" id="CadastroPartGetec">
             <label for="nome">Nome Completo:</label>
             <input type="text" id="nome" name="nome" required>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="tipo_participante">Tipo (Participante):</label>
+            <select name="tipo_participante" id="tipe_part">
+                <option value="interno">Interno</option>
+                <option value="externo">Externo</option>
+            </select>
 
             <label for="telefone">Telefone:</label>
-            <input type="number" id="telefone" name="telefone" required>
+            <input type="text" id="telefone" name="telefone" required>
 
-            <label for="cpf">CPF:</label>
-            <input type="text" id="cpf" name="cpf" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
 
-            <div id="button_local"><button id="button_local_cadastro" type="submit" name="submit"><b>Concluir Cadastro</b></button></div>
+            <div id="button_local"><button id="button_local_cadastro" type="submit" name="submit"><b>Cadastrar-se</b></button></div>
         </form>
     </div>
+    <br><br><br><br>
 
+    <div class="animacao">
+        <span>F</span>
+        <span>A</span>
+        <span>L</span>
+        <span>T</span>
+        <span>A</span>
+        <span>M</span>
+    </div>
     <div id="regressive_Count">
         <div id="dias"></div>
         <div id="horas"></div>
         <div id="minutos"></div>
         <div id="segundos"></div>
     </div>
+    <div class="nome_periodo">
+        <div id="dias"><span>Dias</span></div>
+        <div id="horas"><span>Horas</span></div>
+        <div id="minutos"><span> Minutos</span></div>
+        <div id="segundos"><span>  Segundos</span></div>
+    </div>
 
+    <br><br><br><br><br><br>
     <script src="validation.js"></script>
     <script src="regressive_Count_for_Getec.js"></script>
-    <footer>
-        <div class="footer">IFTO</div>
-    </footer>
+    <br><br><br><br><br><br>
 </body>
+<footer>
+    <div class="footer">
+    <div></div>
+    <div><label for="if">IFTO</label>
+    <a href="https://www.facebook.com/CampusAraguainaIFTO/" target="_blank" rel="noopener noreferrer"><img src="assets/rede sociais/facebook.png" height="75px" alt="200px"></a>
+    <a href="https://www.youtube.com/@IFTOCampusAraguaina" target="_blank" rel="noopener noreferrer"><img src="assets/rede sociais/youtuve.png" height="75px" alt="200px"></a>
+    </div>
+    <div></div>
+    </div>
+</footer>
 </html>
